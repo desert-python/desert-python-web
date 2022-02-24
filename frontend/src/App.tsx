@@ -20,7 +20,7 @@ function App() {
 			<div className="grid-container">
 				<link rel="stylesheet" href="style.css" />
 				<title>Jet Piranha</title>
-				<body>
+				<div>
 					<header className="header">
 						<div className="brand">
 							<button onClick={openMenu}>&#9776;</button>
@@ -51,7 +51,7 @@ function App() {
 						</Routes>
 					</main>
 					<footer className="footer">&copy; 2021 Jet Piranha</footer>
-				</body>
+				</div>
 			</div>
 		</Router>
 	);
