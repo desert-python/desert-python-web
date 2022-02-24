@@ -7,7 +7,6 @@ function Products() {
 			<ul className='products'>
 				{
 					data.products.map(product => {
-						console.log(product);
 						return (
 							<li>
 								<div className="product">
