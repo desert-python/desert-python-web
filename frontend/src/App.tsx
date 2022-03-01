@@ -4,6 +4,8 @@ import './App.css';
 
 import Home from './Home/Home';
 import Products from './Products/Products';
+import Orders from './Orders/Orders';
+import OrderDetails from './Orders/OrderDetails';
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
 						<div className="header-links">
 							<Link to="/">Home</Link>
 							<Link to="/catalog">Catalog</Link>
+							<Link to="/orders">Orders</Link>
 						</div>
 					</header>
 					<aside className="sidebar">
@@ -36,11 +39,11 @@ function App() {
 						<button className="sidebar-close-button" onClick={closeMenu}>x</button>
 						<ul>
 							<li>
-								<a href="index.html">Pants</a>
+								<a href="/">Pants</a>
 							</li>
 
 							<li>
-								<a href="index.html">Shirts</a>
+								<a href="/">Shirts</a>
 							</li>
 						</ul>
 					</aside>
@@ -48,6 +51,8 @@ function App() {
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="/catalog" element={<Products />} />
+							<Route path="/orders" element={<Orders />} />
+							<Route path="/order/:id" element={<OrderDetails />} />
 						</Routes>
 					</main>
 					<footer className="footer">&copy; 2021 Jet Piranha</footer>
