@@ -6,6 +6,7 @@ import Home from './Home/Home';
 import Products from './Products/Products';
 import Orders from './Orders/Orders';
 import OrderDetails from './Orders/OrderDetails';
+import Payment from './Payment/Payment';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
 							<Link to="/">Home</Link>
 							<Link to="/catalog">Catalog</Link>
 							<Link to="/orders">Orders</Link>
+							<Link to="/payment">Payment</Link>
 						</div>
 					</header>
 					<aside className="sidebar">
@@ -53,6 +55,7 @@ function App() {
 							<Route path="/catalog" element={<Products />} />
 							<Route path="/orders" element={<Orders />} />
 							<Route path="/order/:id" element={<OrderDetails />} />
+							<Route path="/payment" element={<Payment />} />
 						</Routes>
 					</main>
 					<footer className="footer">&copy; 2021 Jet Piranha</footer>
