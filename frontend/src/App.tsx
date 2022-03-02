@@ -6,7 +6,9 @@ import Home from './Home/Home';
 import Products from './Products/Products';
 import Orders from './Orders/Orders';
 import OrderDetails from './Orders/OrderDetails';
+import Fulfillment from './Fulfillment/Fulfillment';
 import Payment from './Payment/Payment';
+
 
 function App() {
 
@@ -33,6 +35,7 @@ function App() {
 							<Link to="/">Home</Link>
 							<Link to="/catalog">Catalog</Link>
 							<Link to="/orders">Orders</Link>
+							<Link to="/fulfillment">Fulfillment</Link>
 							<Link to="/payment">Payment</Link>
 						</div>
 					</header>
@@ -55,6 +58,7 @@ function App() {
 							<Route path="/catalog" element={<Products />} />
 							<Route path="/orders" element={<Orders />} />
 							<Route path="/order/:id" element={<OrderDetails />} />
+							<Route path="/fulfillment" element={<Fulfillment />} />
 							<Route path="/payment" element={<Payment />} />
 						</Routes>
 					</main>
