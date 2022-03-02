@@ -226,3 +226,59 @@ input {
 	border: .1rem #c0c0c0 solid;
 	border-radius: .5rem;
 }
+
+/* Fulfillment */
+.fulfillment-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.fulfillment-actions {
+	display: flex;
+	justify-content: space-around;
+}
+
+tbody > tr.shipped {
+	background-color: #1daf007e;
+}
+
+tbody > tr.unshipped {
+	background-color: #d400007e;
+}
+
+.product-modal {
+	position: fixed;
+	background-color: #ccc;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 100px 25%;
+	padding: 20px;
+	border-radius: .5rem;
+}
+
+@media screen and (max-width: 800px) {
+	.product-modal {
+		margin: 100px 10%;
+	}
+}
+
+.products-modal-table {
+	width: 100%;
+}
+
+.modal-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.close-modal {
+	border: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #ff000077;
+}
