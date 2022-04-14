@@ -32,7 +32,7 @@ function Products() {
 				{
 					products.map((product: Product) => {
 						return (
-							<li>
+							<li key={product.id}>
 								<div className="product">
 									<img className="product-image" src={product.imageUrl} alt="product" />
 									<div className="product-name">
