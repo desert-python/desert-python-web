@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import data from './data';
 
 function Fulfillment() {
 
@@ -33,24 +31,7 @@ function Fulfillment() {
 						</tr>
 					</thead>
 					<tbody>
-						{data.fulfillment.map(value => {
-							return (
-								<tr className={value.isDelivered ? 'shipped' : 'unshipped'} key={value._id}>
-									<td>{value._id}</td>
-									<td>{value.createdAt}</td>
-									<td>{value.totalPrice}</td>
-									<td>{value.user.name}</td>
-									<td>{value.isPaid.toString()}</td>
-									<td>{value.paidAt}</td>
-									<td>{value.isDelivered.toString()}</td>
-									<td>{value.deliveredDate}</td>
-									<td className='fulfillment-actions'>
-										<button onClick={() => showProducts(value.products)} className="button secondary">View Products</button>
-										{/* <Link to={`/fulfillment/${value._id}`} className="button secondary">Details</Link> */}
-									</td>
-								</tr>
-							);
-						})}
+
 					</tbody>
 				</table>
 			</div>
