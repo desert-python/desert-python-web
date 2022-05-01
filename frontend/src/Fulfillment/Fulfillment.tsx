@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Fulfillment() {
 
-	const [showProductsModal, setShowProductModal] = useState(false);
-	const [selectedProducts, setSelectedProducts] = useState<any[]>([]);
+	// const [showProductsModal, setShowProductModal] = useState(false);
+	// const [selectedProducts, setSelectedProducts] = useState<any[]>([]);
 
-	const showProducts = (order: any) => {
-		setShowProductModal(!showProductsModal);
-		setSelectedProducts(order);
-	};
+	// const showProducts = (order: any) => {
+	// 	setShowProductModal(!showProductsModal);
+	// 	setSelectedProducts(order);
+	// };
 
 	return (
 		<div className={`content content-margined`}>
@@ -36,7 +36,7 @@ function Fulfillment() {
 				</table>
 			</div>
 			{/* Proucts Modal */}
-			<div className="product-modal" hidden={!showProductsModal}>
+			{/* <div className="product-modal" hidden={!showProductsModal}>
 				<div className='modal-header'>
 					<h2>Products in Fulfillment</h2>
 					<button onClick={() => setShowProductModal(false)} className='close-modal'>X</button>
@@ -65,7 +65,7 @@ function Fulfillment() {
 						})}
 					</tbody>
 				</table>
-			</div>
+			</div> */}
 		</div >
 	);
 
